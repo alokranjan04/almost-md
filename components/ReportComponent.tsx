@@ -124,7 +124,7 @@ const ReportComponent = ({ onReportConfirmation }: Props) => {
         }
         setIsLoading(true);
 
-        const response = await fetch("api/extractreportgemini", {
+        const response = await fetch("https://medic-00lixtq.svc.aped-4627-b74a.pinecone.io/api/extractreportgemini", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
